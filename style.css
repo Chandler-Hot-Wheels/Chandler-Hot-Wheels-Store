@@ -1,3 +1,25 @@
+.admin-panel {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.admin-panel input,
+.admin-panel textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.admin-panel textarea {
+    height: 100px;
+}
+
+.product p {
+    min-height: 50px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
