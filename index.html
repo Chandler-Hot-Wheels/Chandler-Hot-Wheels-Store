@@ -6,6 +6,29 @@
     <title>Hot Wheels Marketplace</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<hr>
+
+<section class="admin-panel">
+    <h2>Add New Listing</h2>
+
+    <input type="text" id="itemName" placeholder="Item Name"><br><br>
+
+    <textarea id="itemDescription" placeholder="Description"></textarea><br><br>
+
+    <input type="number" id="itemPrice" placeholder="Price"><br><br>
+
+    <input type="file" id="itemImage" accept="image/*"><br><br>
+
+    <button onclick="addListing()">Add Listing</button>
+</section>
+
+<hr>
+
+<section>
+    <h2>Available Cars</h2>
+    <div id="productContainer" class="products"></div>
+</section>
 <body>
 
 <header>
@@ -33,6 +56,13 @@
 
     <div class="product">
         <img src="images/car3.jpg" alt="Hot Wheels Car">
+        <h3>Nissan Skyline GT-R</h3>
+        <p>$20.00</p>
+        <button onclick="addToCart('Nissan Skyline GT-R', 20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/car4.jpg" alt="Hot Wheels Car">
         <h3>Toyota Supra</h3>
         <p>$18.00</p>
         <button onclick="addToCart('Toyota Supra', 18)">Add to Cart</button>
